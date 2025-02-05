@@ -1,11 +1,11 @@
-﻿namespace MeuSegundoApp
+﻿namespace AlunoCProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-        /*
-        Exercicio 1
+        
+        /*Exercicio 1
         
         Console.WriteLine("Insira o primeiro número: ");
         var num = int.Parse(Console.ReadLine());
@@ -23,7 +23,8 @@
         Console.WriteLine($"Divisão: {div}");
         */
         
-        /* Exercicio 2
+        
+        /*Exercicio 2
         Console.WriteLine("Insira o valor do produto: ");
         var num = int.Parse(Console.ReadLine());
         Console.WriteLine("Insira o valor do desconto: ");
@@ -36,7 +37,8 @@
         Console.WriteLine($"O valor do produto é igual a {valor}");
         */
         
-       /* Exercicio 3
+        
+       /*Exercicio 3
         int i = 0;
         for(i = 0; i<=20; i++)
         {
@@ -67,10 +69,10 @@
         }
 
         Console.WriteLine("SOMA: " + soma);
+        */
+       
 
-       */
-
-       /* Exercicio 5
+       /*Exercicio 5
        int[] numeros = new int[5];
 
         for (int i = 0; i < 5; i++)
@@ -120,8 +122,8 @@
         {
             Console.WriteLine($"O número {numeroBuscar} não está na lista.");
         }
-
         */
+        
 
         /* Exercicio 7
 
@@ -132,16 +134,10 @@
         Console.WriteLine("Digite a terceira nota: ");
         var nt3 = int.Parse(Console.ReadLine());
 
-        double med = nt1 + nt2 + nt3 / 3;
-        if( med >= 7){
-        Console.WriteLine(" O aluno foi aprovado !");
-
-        } 
-        
-        else{
-        Console.WriteLine(" O aluno foi reprovado !");
-        }
+        double med = (nt1 + nt2 + nt3)/ 3;
+        Console.Write($"Sua média é: {med}");
         */
+        
 
        /* Exercicio 8
         Console.Write("Digite um número: ");
@@ -173,25 +169,22 @@
         }
 
         return true; 
-    } */
+        */
+    
   
       /*  Exercicio  9
-        Carro meuCarro = new Carro();
-        
-        meuCarro.Marca = "Toyota";
-        meuCarro.Modelo = "Corolla";
-        meuCarro.Ano = 2020;
-        Console.WriteLine($"{meuCarro.Marca} {meuCarro.Modelo} - {meuCarro.Ano}");
-    }
-}
+       Console.WriteLine("Digite a marca do carro: ");
+       var marca = string.Concat(Console.ReadLine());
+       Console.WriteLine("Digite o modelo do carro: ");
+       var mdlo = string.Concat(Console.ReadLine());
+       Console.WriteLine("Digite o ano do carro: ");
+       var ano = int.Parse(Console.ReadLine());
 
-class Carro
-{
-    public string Marca { get; set; }
-    public string Modelo { get; set; }
-    public int Ano { get; set; } */
-    
+       Console.WriteLine($"{marca} {mdlo} - {ano}");
+       */
+
+
+        }
     }
 
   }
-}
